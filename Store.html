@@ -13,7 +13,7 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
       <script src="store.js" async></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     </head>
     <body>
       <header>
@@ -136,13 +136,13 @@ Learning to invest in total is a 4-Week self taught program that is as comprehen
 
                 </div>
         <img class="logo" src='Assets/Photos/Logo.png'>
-        <btn class= "showCart" id ="showBtn" type="button" ><img class= "showCartImg" src = "Assets/Photos/cartIcon.png";><btn>
+        <btn class= "showCart" id ="showBtn" type="button" onclick="showOnClick()" ><img class= "showCartImg" src = "Assets/Photos/cartIcon.png";><btn>
       </nav>
-      <section class= "section 2" id="cartID">
-        <section class="container content-section"  style= "position:fixed; right:0px; top:0px; background-color: rgb(33,33,33); height:817px; width: 350px">
+      <section class= "section 2" id=cartID style= "display:none;">
+        <section class="container content-section"  style= "display: block; position:fixed; right:0px; top:0px; background-color: rgb(33,33,33); height:817px; width: 350px">
             <div class="sh">
               <h2 class="section-header" style=" color: black;">Your Cart</h2>
-              <btn class= "hideCart" id ="hideBtn" type="button">Continue Shopping<btn>
+              <btn class= "hideCart" id ="hideBtn" type="button" onclick="hideOnClick()" >Continue Shopping<btn>
             </div>
             <div class="cart-row">
                 <span class="cart-item cart-header cart-column"></span>

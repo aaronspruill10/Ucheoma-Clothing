@@ -3,11 +3,7 @@ if (document.readyState == 'loading') {
 } else {
     ready()
 }
-$("#hideCart").click(function(){
-  $(“cartID”).hide();
 
-
-});
 
 function ready() {
     var removeCartItemButtons = document.getElementsByClassName('btn-danger')
@@ -34,7 +30,17 @@ function ready() {
 
 
 
+function myFunction() {
 
+
+
+}
+function hideOnClick(){
+  document.getElementById('cartID').style.display = 'none';
+}
+function showOnClick(){
+  document.getElementById('cartID').style.display = 'block';
+}
 
 
 
