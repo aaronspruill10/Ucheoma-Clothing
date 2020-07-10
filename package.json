@@ -1,0 +1,27 @@
+{
+  "name": "learning-to-invest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "store.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaronspruill10/Learning-to-Invest.git"
+  },
+  "author": "Aaron Spruill",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aaronspruill10/Learning-to-Invest/issues"
+  },
+  "homepage": "https://github.com/aaronspruill10/Learning-to-Invest#readme",
+  "dependencies": {
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "stripe": "^8.69.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
