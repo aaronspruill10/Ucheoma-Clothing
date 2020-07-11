@@ -3,20 +3,12 @@ if (document.readyState == 'loading') {
 } else {
     ready()
 }
-
-
 function ready() {
     var removeCartItemButtons = document.getElementsByClassName('btn-danger')
     for (var i = 0; i < removeCartItemButtons.length; i++) {
         var button = removeCartItemButtons[i]
         button.addEventListener('click', removeCartItem)
     }
-
-  //  var quantityInputs = document.getElementsByClassName('cart-quantity-input')
-  //  for (var i = 0; i < quantityInputs.length; i++) {
-  //      var input = quantityInputs[i]
-  //      input.addEventListener('change', quantityChanged)
-  //  }
 
     var addToCartButtons = document.getElementsByClassName('shop-item-button')
     for (var i = 0; i < addToCartButtons.length; i++) {
@@ -28,13 +20,6 @@ function ready() {
 
 }
 
-
-
-function myFunction() {
-
-
-
-}
 function hideOnClick(){
   document.getElementById('cartID').style.display = 'none';
 }
@@ -43,15 +28,8 @@ function showOnClick(){
 }
 
 
-
-
 function purchaseClicked() {
-    alert('Thank you for your purchase')
-    var cartItems = document.getElementsByClassName('cart-items')[0]
-    while (cartItems.hasChildNodes()) {
-        cartItems.removeChild(cartItems.firstChild)
-    }
-    updateCartTotal()
+
 }
 function removeCartItem(event) {
     var buttonClicked = event.target

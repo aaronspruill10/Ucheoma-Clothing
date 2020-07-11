@@ -202,7 +202,7 @@
   position:absolute;
   top: 1755px;
   left:0;
-  height: 850px;
+  height: 695px;
   width: 100%;
   background-color: rgb(50, 50, 50);
 }
@@ -238,6 +238,9 @@
   position: relative;
   left: 150px;
 
+}
+.shop-Items{
+  width: 100%;
 }
 .storeHeader{
   position:absolute;
@@ -363,7 +366,7 @@
 }
 .storeFooter{
   position:absolute;
-  top: 2750px;
+  top: 2450px;
   height: 629px;
   width: 1450px;
   background-color: rgb(33, 33, 33);
@@ -433,7 +436,6 @@
   top: 67px;
   left: 650px;
   font-family: 'Open Sans', sans-serif;
-
 }
 .aboutFooter{
   position:absolute;
