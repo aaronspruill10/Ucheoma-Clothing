@@ -12,17 +12,18 @@
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-      <script src="https://js.stripe.com/v3/"></script>
-
+      <script src="https://checkout.stripe.com/checkout.js" defer></script>
+      <script src="store.js" defer></script>
       <script>
+          var stripePublicKey = '<%= stripePublicKey %>'
         function hideOnClick(){
         document.getElementById('cartID').style.display = 'none';
-      }
+        }
         function showOnClick(){
         document.getElementById('cartID').style.display = 'block';
-      }
+        }
       </script>
-      <script src="store.js"></script>
+
 
     </head>
     <body>
@@ -66,16 +67,28 @@ Learning to invest in total is a 4-Week self taught program that is as comprehen
         <div class ="break1"></div>
 
         <div class="shop-items">
-            <div class="shop-item" data-item-id="" style="position: relative; top: 80px; left: 0px;">
-              <span class="shop-item-title" style="position: relative; top: 0px; left: 0px"><%= Weeks[0]item.name %></span>
-                <img class="shop-item-image" src="Assets/Photos/<%= Weeks[0].imgName%>">
+          <%items.Week1.forEach(function(item){%>
+            <div class="shop-item" data-item-id="<%= item.id %>" style="position: relative; top: 80px; left: 0px;">
+              <span class="shop-item-title" style="position: relative; top: 0px; left: 0px"><%= item.name %></span>
+                <img class="shop-item-image" src="Assets/Photos/<%= item.imgName %>">
                 <div class="shop-item-details">
-                <span class="shop-item-price" style="position: relative; top: 10px; left: 180px">$<%= item.price / 100 %></span>
+                <span class="shop-item-price" style="position: relative; top: 10px; left: 180px"><%= item.price %></span>
                   <button class="btn btn-primary shop-item-button" type="button" style="position: relative; top: 10px; left: -43px">Add to Cart</button>
                 </div>
               </br>
             </div>
-          s
+          <% })%>
+          <%items.Week2.forEach(function(item){%>
+            <div class="shop-item" data-item-id="<%= item.id %>" style="position: relative; top: 80px; left: 0px;">
+              <span class="shop-item-title" style="position: relative; top: 0px; left: 0px"><%= item.name %></span>
+                <img class="shop-item-image" src="Assets/Photos/<%= item.imgName %>">
+                <div class="shop-item-details">
+                <span class="shop-item-price" style="position: relative; top: 10px; left: 180px"><%= item.price %></span>
+                  <button class="btn btn-primary shop-item-button" type="button" style="position: relative; top: 10px; left: -43px">Add to Cart</button>
+                </div>
+              </br>
+            </div>
+          <% })%>
         </div>
 
       </span>
@@ -136,6 +149,8 @@ Learning to invest in total is a 4-Week self taught program that is as comprehen
                 <span class="cart-price cart-header cart-column" style="color: white;"></span>
                 <span class="cart-quantity cart-header cart-column"></span>
             </div>
+
+
             <div class="cart-items">
             </div>
             <div class="cart-total">

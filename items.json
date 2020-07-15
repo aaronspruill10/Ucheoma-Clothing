@@ -1,29 +1,18 @@
 {
-  "Weeks": [
+  "Week1": [
     {
       "id": 1,
       "name": "Week 1: Learning the Basics",
       "price": 499,
       "imgName": "Week1StorePic.jpeg"
-    },
+    }
+  ],
+  "Week2": [
     {
       "id": 2,
       "name": "Week 2: Getting Deeper",
-      "price": 499,
+      "price" : 499,
       "imgName": "Week2StorePic.png"
-    },
-    {
-      "id": 3,
-      "name": "Week 3",
-      "price": 499,
-      "imgName": "Week3StorePic.png"
-    },
-    {
-      "id": 4,
-      "name": "Week 4",
-      "price": 499,
-      "imgName": "Week3StorePic.png"
     }
-
-  ]
+    ]
 }
