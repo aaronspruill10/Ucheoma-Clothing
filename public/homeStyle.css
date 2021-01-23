@@ -178,8 +178,44 @@
   height: 1450px;
   position: relative;
   top: -650px;
-}
+  opacity: 80%
 
+}
+.section1BackgroundPic2{
+  background-image: url(Assets/Photos/back-round.gif);
+  background-size: 100%;
+  width: 100%;
+  height: 1450px;
+  top: -650px;
+  position: relative;
+  opacity: 80%;
+
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+}
+.section1BackgroundPic3{
+  background-image: url(Assets/Photos/back-round.gif);
+  background-size: 100%;
+  width: 100%;
+  height: 1450px;
+  position: relative;
+  top: -650px;
+  opacity: 70%;
+
+}
+.section1BackgroundPic24{
+  background-image: url(Assets/Photos/back-round.gif);
+  background-size: 100%;
+  width: 100%;
+  height: 1450px;
+  top: -650px;
+  position: relative;
+  opacity: 70%;
+
+
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+}
 
 
 .storeRectangle{
@@ -774,24 +810,7 @@
   display:none;
   width: 400px;
 }
-.section1BackgroundPic{
-  position:absolute;
-  width: 100%;
-  display:none;
-  height: 800px;
-  top:-100px;
-  left:0px;
-}
-.section1BackgroundPic2{
-  position:absolute;
-  top: -100px;
-  left: 0px;
-  width: 100%;
-  height: 700px;
-  background-size: cover;
-  display: block;
-  opacity: .9;
-}
+
 .rectangle{
   width:100%;
   height:900px;
